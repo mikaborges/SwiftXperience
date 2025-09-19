@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #ff9a56 0%, #ff6b35 100%);
+    min-height: 100vh;
+}
+
+/* Menu Lateral */
+.sidebar {
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+    min-height: 100vh;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content {
+    padding: 1.5rem 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 0 1.5rem 2rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+.sidebar-title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar-title i {
+    color: #3498db;
+    margin-right: 0.5rem;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item i {
+    width: 20px;
+    margin-right: 0.75rem;
+    text-align: center;
+}
+
+.sidebar-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 0.75rem;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.user-role {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+}
+
+.logout-btn {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    margin-left: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.missions-wrapper {
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.mission-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 18px;
+    color: white;
+}
+
+.super-venda {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+}
+
+.orgulho-loja {
+    background: linear-gradient(135deg, #4ecdc4, #44a08d);
+}
+
+.meta-dia {
+    background: linear-gradient(135deg, #6c5ce7, #5f3dc4);
+}
+
+.mission-info {
+    flex: 1;
+}
+
+.mission-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.mission-subtitle {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.mission-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.progress {
+    flex: 1;
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Larguras específicas das barras de progresso */
+.super-venda-card .progress-bar {
+    width: 60%;
+}
+
+.orgulho-loja-card .progress-bar {
+    width: 50%;
+}
+
+.meta-dia-card .progress-bar {
+    width: 30%;
+}
+
+.progress-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    min-width: 35px;
+    text-align: right;
+}
+
+.mission-rewards {
+    display: flex;
+    gap: 16px;
+}
+
+.xp, .pts {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+.xp::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #28a745;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.pts::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .main-content {
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-content {
+        margin-left: 16.666667%;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .content-wrapper {
+        padding: 1rem;
+        align-items: flex-start;
+    }
+    
+    .missions-wrapper {
+        padding: 20px 16px;
+    }
+    
+    .title {
+        font-size: 22px;
+    }
+    
+    .mission-card {
+        padding: 16px;
+    }
+}
