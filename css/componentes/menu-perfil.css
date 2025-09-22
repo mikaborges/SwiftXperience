@@ -1,0 +1,13 @@
+
+:root {
+
+    --top-menu-text-color: #FFFFFF;
+
+     --top-menu-title: 400 1.875rem ;
+    --top-menu-subtitle: 400 .625rem ;
+    --top-menu-level: 400 1.125rem ;
+    --top-menu-exp: var(--top-menu-level);
+    --top-menu-points: 400 .875rem;
+    --title: 400 2.5rem;
+
+}

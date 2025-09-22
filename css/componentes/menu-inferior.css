@@ -1,0 +1,22 @@
+:root{
+
+    --cor-menu-inferior: linear-gradient(90deg, #FC8657 0%, #FF3353 100%);
+}
+
+.menu-inferior {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: var(--cor-menu-inferior);
+    width: 100%;
+    height: 5.375rem;
+    overflow-y: hidden;
+
+}
+
+.menu-inferior .item-menu img {
+
+    height: 3.125rem;
+    width: 3.125rem;
+} 

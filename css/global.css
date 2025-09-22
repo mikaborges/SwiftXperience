@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("missoes.css");
+@import url("componentes/menu-perfil.css");
+@import url("componentes/menu-lateral.css");
+@import url("componentes/menu-inferior.css");
+@import url("componentes/card-recompensas.css");
+
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    --bg-color: #FED4BB;
+    --content-text-color: #000000;
+    
+    --top-menu-color: linear-gradient(180deg, #FC8657 0%, #FF3353 100%);
+    
+    --font-primary: "Inter", sans-serif;
+    
+
+}
+
+body {
+
+    font-family: var(--font-primary);
+    background: var(--bg-color);
+    color:  var(--content-text-color);
+}
