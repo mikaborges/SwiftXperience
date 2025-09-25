@@ -1,0 +1,179 @@
+@import url("avatar-perfil.css");
+
+:root {
+
+    --cor-texto-perfil: #FFFFFF;
+
+    --card-perfil-cor: linear-gradient(180deg, #FC8657 0%, #FF3353 100%);
+    --card-tela-perfil-cor: linear-gradient(130deg, #FC8657 0%, #FF3353 100%);
+    --texto-weigth: 400;
+    --cor-barra-progresso: #F0E2E2;
+    --cor-progresso-atual: #007AFF;
+    --title: 400 2.5rem;
+
+}
+
+.card-perfil {
+    position:fixed;
+    top: 0;
+    box-sizing: border-box;
+    background: var(--card-tela-perfil-cor);
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 10vh;
+    padding: .5rem;
+    color: var(--cor-texto-perfil);
+    font-weight: var(--texto-weigth);
+    border-radius: 0px 0px 20px 20px;
+    display: grid;
+    grid-template-areas:
+    ". titulo titulo"
+    "avatar subtitulo subtitulo"
+    "avatar nivel experiencia"
+    "avatar progresso experiencia"
+    ". pontos experiencia";
+    align-items: center;
+    justify-content: center;
+    gap:.7rem;
+
+    & .avatar-perfil {
+
+        grid-area: avatar;
+        grid-area: avatar;
+        width: 7.1rem;
+        height: 6.75rem;
+        /* border-radius: 50%; */
+        
+        /* & .avatar-padrao{
+        
+            width: 100%;
+            height: 100%;
+            background: url(../../assets/avatar-perfil.png) center/cover no-repeat; 
+        } */
+    }
+
+    & .titulo-perfil {
+        grid-area: titulo;
+        font-size: 1.875rem;
+    }
+
+    & .subtitulo-perfil{
+        
+        grid-area: subtitulo;
+        margin-inline: 10%;
+        font-size: 1rem;
+    }
+
+    & .nivel-perfil {
+        grid-area: nivel;
+        font-size: 1.125rem;
+    }
+
+    & .barra-progresso {
+        grid-area: progresso;
+        width: 11.625rem;
+        height: 0.4375rem;
+        background: var(--cor-barra-progresso);
+        border-radius:20px;
+        & .progresso-atual {
+
+            height: inherit;
+            width: 1.5rem;
+            border-radius: 20px 0px 0px 20px;
+            background-color: var(--cor-progresso-atual);
+        }
+    }
+
+    & .experiencia-perfil {
+            grid-area: experiencia;
+            font-size: 1.125rem;
+        }
+       
+
+    & .pontos-perfil {
+        grid-area: pontos;
+        font-size: .875rem;
+    }
+    
+    
+}
+
+.tela-perfil .card-perfil {
+
+    grid-template-areas:
+    ". avatar ." 
+    ". titulo ."
+    ". subtitulo ."
+    "nivel progresso experiencia"
+    ". pontos .";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding-top: 10px;
+    row-gap: 1rem;
+
+    & .avatar-padrao {
+
+        width: 8.1rem;
+        height: 7.75rem;
+    }
+
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+
+    .card-perfil, .tela-perfil .card-perfil {
+        align-content: start;
+        justify-content: start;
+        padding: 10px;
+        overflow-y: hidden;
+        column-gap: 1rem;
+        row-gap: 0rem;
+        grid-template-areas: 
+            "avatar titulo subtitulo nivel progresso experiencia pontos";
+
+        & .avatar-perfil {
+
+            width: 2.9rem;
+            height:2.75rem;
+
+            & .avatar-padrao {
+
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+         & .titulo-perfil {
+
+            font-size: 2rem;
+            width: 14rem;
+            height:2rem;
+         }
+
+         & .subtitulo-perfil {
+
+            font-size: 1rem;
+            width: 6rem;
+            height: 1rem;
+         }
+
+         & .nivel-perfil {
+            width: 3.6rem;
+            height: 2rem;
+         }
+
+         & .barra-progresso {
+
+            width: 5.5rem;
+         }
+
+         & .experiencia-perfil {
+
+            width: 6.5rem;
+         }
+    }   
+}
