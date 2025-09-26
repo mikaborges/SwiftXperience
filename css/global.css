@@ -5,11 +5,20 @@
 @import url("componentes/menu-lateral.css");
 @import url("componentes/menu-inferior.css");
 @import url("componentes/card-recompensas.css");
+@import url("perfil.css");
 
 * {
 
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: var(--font-primary);
+    background: var(--bg-color);
+    color:  var(--content-text-color);
 }
 
 :root {
@@ -22,11 +31,4 @@
     --font-primary: "Inter", sans-serif;
     
 
-}
-
-body {
-
-    font-family: var(--font-primary);
-    background: var(--bg-color);
-    color:  var(--content-text-color);
 }
