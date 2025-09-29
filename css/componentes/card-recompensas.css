@@ -1,0 +1,49 @@
+
+:root {
+
+    --card-recompensa-texto-weight: 400;
+    --card-recompensa-titulo-size: 1.25rem;
+    --card-recompensa-info-size: .875rem;
+    --card-recompensa-points: var(--card-recompensa-info);
+    --card-recompensa-fundo: #D9D9D9;
+
+}
+
+.card-recompensa {
+
+    background-color: var(--card-recompensa-fundo);
+    font-family: inherit;
+    color: inherit;
+    border-radius: 10px;
+    width: 24.5rem;
+    height: 6.25rem;
+
+    .recompensa-icon {
+
+        width: 2.4375rem;
+        height:2.4375rem;
+    }
+
+    .recompensa-titulo {
+        font-size: var(--card-recompensa-titulo-size);
+        font-weight: var(--card-recompensa-texto-weight);
+    }
+
+    .recompensa-info {
+        font-size: var(--card-recompensa-info-size);
+        font-weight: var(--card-recompensa-texto-weight);
+    }
+
+    .recompensa-button {
+
+        background: url("../../assets/recompensa_button.png") center/contain no-repeat;
+        border: none;
+        width: 3.9375rem;
+        height:2.5rem;
+    }
+
+    .recompensa-points {
+        font-size: var(--card-recompensa-info-size);
+        font-weight: var(--card-recompensa-texto-weight);
+    }
+}
