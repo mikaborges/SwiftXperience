@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("missoes.css");
+@import url("recompensas.css");
+@import url("componentes/card-perfil.css");
+@import url("componentes/menu-lateral.css");
+@import url("componentes/menu-inferior.css");
+@import url("componentes/card-recompensas.css");
+@import url("componentes/conquistas.css");
+@import url("componentes/estatisticas.css");
+@import url("componentes/insignias.css");
+@import url("missoes.css");
+@import url("perfil.css");
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+
+    font-family: var(--font-primary);
+    background: var(--bg-color);
+    color:  var(--content-text-color);
+    padding-bottom: 80px; 
+}
+
+:root {
+
+    --bg-color: #FED4BB;
+    --content-text-color: #000000;
+    --font-primary: "Inter", sans-serif;
+    
+
+}

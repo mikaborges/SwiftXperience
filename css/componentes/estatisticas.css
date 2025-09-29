@@ -1,0 +1,97 @@
+/* The main grid container for the dashboard */
+.estatisticas-grid {
+    display: grid;
+    /* Create 3 equal-width columns on larger screens */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 10px;
+}
+
+/* Base style for all statistic cards */
+.stat-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-title {
+    font-size: 0.9em;
+    color: #6c757d; /* A muted gray color */
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Card for the recent activity list */
+.activity-list-card {
+    /* This is key: make this card span all 3 columns */
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activity-list-title {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Individual item in the activity list */
+.activity-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 12px;
+}
+.activity-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.activity-icon-container {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+.activity-text {
+    flex-grow: 1;
+}
+
+.activity-description {
+    font-weight: 600;
+}
+
+.activity-timestamp {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.activity-points {
+    text-align: right;
+    font-weight: 600;
+    color: #28a745; /* A positive green color */
+}
+
+/* Make the grid responsive on smaller screens */
+@media (max-width: 768px) {
+    .estatisticas-grid {
+        /* Stack everything in a single column */
+        grid-template-columns: 1fr;
+    }
+}

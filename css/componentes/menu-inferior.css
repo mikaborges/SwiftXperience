@@ -1,0 +1,36 @@
+:root{
+    --cor-menu-inferior: linear-gradient(90deg, #FC8657 0%, #FF3353 100%);
+}
+.menu-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3px;
+    background: linear-gradient(135deg, #ff9a56 0%, #ff6b35 100%); 
+    height: 60px;
+    padding-bottom: env(safe-area-inset-bottom);
+    height: calc(60px + env(safe-area-inset-bottom));
+}
+
+.menu-inferior .item-menu img {
+
+    height: 3.125rem;
+    width: 3.125rem;
+} 
+
+@media (max-width: 768px) {
+    .menu-inferior {
+        height: 3.5rem;
+    }
+
+    .menu-inferior .item-menu img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+}
