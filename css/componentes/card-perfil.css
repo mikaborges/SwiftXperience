@@ -22,6 +22,7 @@
     overflow-x: hidden;
     min-height: 10vh;
     padding: .5rem;
+    z-index: 1000;
     color: var(--cor-texto-perfil);
     font-weight: var(--texto-weigth);
     border-radius: 0px 0px 20px 20px;
@@ -88,14 +89,11 @@
             grid-area: experiencia;
             font-size: 1.125rem;
         }
-       
-
+    
     & .pontos-perfil {
         grid-area: pontos;
         font-size: .875rem;
-    }
-    
-    
+    } 
 }
 
 .tela-perfil .card-perfil {
@@ -122,7 +120,14 @@
 
 }
 
-@media (orientation: landscape) and (max-width: 1000px) {
+@media (min-width: 801px) {
+
+    .tela-perfil .card-perfil, .card-perfil {
+        display: none;
+    }
+}
+
+@media (min-aspect-ratio: 4/3) and (max-width: 950px) {
 
     .card-perfil, .tela-perfil .card-perfil {
         align-content: start;
@@ -175,5 +180,6 @@
 
             width: 6.5rem;
          }
-    }   
+    } 
+    
 }

@@ -5,6 +5,10 @@
 @import url("componentes/menu-lateral.css");
 @import url("componentes/menu-inferior.css");
 @import url("componentes/card-recompensas.css");
+@import url("componentes/conquistas.css");
+@import url("componentes/estatisticas.css");
+@import url("componentes/insignias.css");
+@import url("missoes.css");
 @import url("perfil.css");
 
 * {
@@ -16,18 +20,22 @@
 
 body {
 
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    overflow-x: hidden;
+
+
     font-family: var(--font-primary);
     background: var(--bg-color);
     color:  var(--content-text-color);
+
 }
 
 :root {
 
     --bg-color: #FED4BB;
     --content-text-color: #000000;
-    
-   
-    
     --font-primary: "Inter", sans-serif;
     
 

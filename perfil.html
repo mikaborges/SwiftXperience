@@ -1,147 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/global.css">
     <title>Perfil</title>
 </head>
+
 <body>
 
-    <header class = "tela-perfil">
-        <div class = "card-perfil d-lg-none">
+    <header class="tela-perfil">
+     <div class="card-perfil d-lg-none">
+         <div class="avatar-perfil">
+             <div class="avatar-padrao"></div>
+         </div>
 
-            <div class = "avatar-perfil">
-                <div class="avatar-padrao"></div>
-            </div>
+         <h1 class="titulo-perfil">
+             Diego Campos
+         </h1>
 
-            <h1 class = "titulo-perfil">
-                Diego Campos
-            </h1>
+         <h5 class="subtitulo-perfil">
+             Vendedor Jr
+         </h5>
 
-            <h5 class = "subtitulo-perfil">
-                Vendedor Jr
-            </h5>
+         <span class="nivel-perfil">Nível 5</span>
 
-            <span class = "nivel-perfil">Nível 5</span>
-            
-            <div class = "barra-progresso">
-                <div class = "progresso-atual"></div>
-            </div>
-               
-            <span class = "pontos-perfil"> 800 pontos</span>
-           
-            <span class = "experiencia-perfil">exp: 22/100</span>
+         <div class="barra-progresso">
+             <div class="progresso-atual"></div>
+         </div>
 
-        </div>
+         <span class="pontos-perfil"> 800 pontos</span>
+
+         <span class="experiencia-perfil">exp: 22/100</span>
+
+     </div>
     </header>
 
-    <main>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-md-3 col-lg-2 sidebar">
+                <div class="sidebar-content">
+                    <div class="sidebar-header">
+                        <h4 class="sidebar-title">
+                            <i class="fas fa-trophy"></i>
+                            Dashboard
+                        </h4>
+                    </div>
+                    
+                    <nav class="sidebar-nav">
+                        <a href="index.html" class="nav-item">
+                            <i class="fas fa-home"></i>
+                            <span>Início</span>
+                        </a>
+                        <a href="missoes.html" class="nav-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Missões</span>
+                        </a>
+                        <a href="perfil.html" class="nav-item active">
+                            <i class="fas fa-user"></i>
+                            <span>Perfil</span>
+                        </a>
+                        <a href="recompensas.html" class="nav-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Recompensas</span>
+                        </a>
+                    </nav>
+                    
+                    <div class="sidebar-footer">
+                        <div class="user-info">
+                            <div class="user-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="user-details">
+                                <span class="user-name">Diego Campos</span>
+                                <span class="user-role">Vendedor</span>
+                            </div>
+                        </div>
+                        <a href="#" class="logout-btn">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <main class="col-md-9 col-lg-10 main-content">
         <div class="container menu-stats">
             <ul class="nav nav-underline bg-light 
             borda
             nav-pill
-            justify-content-around align-items-center" 
-            id="meuMenu" role="tablist">
-               <li role = "presentation">
-                    <button class = "nav-link active" 
-                    id = "conquistas-tab" data-bs-toggle="tab"
-                    data-bs-target="#conquistas-pane" type="button" role="tab" 
-                    aria-controls="conquistas-tab" aria-selected="true">Conquistas</button>
-               </li>
-    
-               <li role = "presentation">
-                    <button class = "nav-link" 
-                    id = "insignias-tab" data-bs-toggle="tab"
-                    data-bs-target="#insignias-pane" type="button" role="tab" 
-                    aria-controls="insignias-tab" aria-selected="false">Insignias</button>
-               </li>
-    
-               <li role = "presentation">
-                    <button class = "nav-link" 
-                    id = "estaticas-tab" data-bs-toggle="tab"
-                    data-bs-target="#estatisticas-pane" type="button" role="tab" 
-                    aria-controls="estaticas-tab" aria-selected="false">Estatística</button>
-               </li>
+            justify-content-around align-items-center" id="meuMenu" role="tablist">
+                <li role="presentation">
+                    <button class="nav-link active" id="conquistas-tab" data-bs-toggle="tab"
+                        data-bs-target="#conquistas-pane" type="button" role="tab" aria-controls="conquistas-tab"
+                        aria-selected="true">Conquistas</button>
+                </li>
+
+                <li role="presentation">
+                    <button class="nav-link" id="insignias-tab" data-bs-toggle="tab" data-bs-target="#insignias-pane"
+                        type="button" role="tab" aria-controls="insignias-tab" aria-selected="false">Insignias</button>
+                </li>
+
+                <li role="presentation">
+                    <button class="nav-link" id="estaticas-tab" data-bs-toggle="tab" data-bs-target="#estatisticas-pane"
+                        type="button" role="tab" aria-controls="estaticas-tab"
+                        aria-selected="false">Estatística</button>
+                </li>
             </ul>
 
             <div class="tab-content conteudo-perfil" id="myTabContent">
-                <div class="tab-pane fade show active" id="conquistas-pane" role="tabpanel" aria-labelledby="conquistas-tab" tabindex="0">
-                    <div class="lista-conquistas d-flex align-items-center">
-                        <div>Conquista1</div>
-                        <div>Conquista2</div>
-                        <div>Conquista3</div>
-                        <div>Conquista4</div>
-                         <div>Conquista5</div>
-                        <div>Conquista6</div>
-                        <div>Conquista7</div>
-                         <div>Conquista8</div>
-                        <div>Conquista9</div>
-                        <div>Conquista10</div>
+                <div class="tab-pane fade show active" id="conquistas-pane" role="tabpanel"
+                    aria-labelledby="conquistas-tab" tabindex="0">
+                    <div id="conquistasLoader" class="conquistas-container">
+                        <!-- Aqui injetamos as Conquistas por JavaScript -->
                     </div>
                 </div>
-                <div class="tab-pane fade" id="insignias-pane" role="tabpanel" aria-labelledby="insignias-tab" tabindex="1">
-
-                    <div class = "d-grid lista-insignias">
-                        <div class = "insignia">A</div>
-                        <div class = "insignia">B</div>
-                         <div class = "insignia">C</div>
-                         <div class = "insignia">D</div>
-                         <div class = "insignia">E</div>
-                         <div class = "insignia">F</div>
-                         <div class = "insignia">G</div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="estatisticas-pane" role="tabpanel" aria-labelledby="estaticas-tab" tabindex="2">
-
-                    <div class = "d-grid lista-estatisticas">
-
-                        <div class="status d-flex">Estatísticas</div>
-                        <div class="atividades-recentes d-flex">
-                            Atividades Recentes
-                            <div>Item1</div>
-                            <div>Item2</div>
-                            <div>Item3</div>
-                            <div>Item4</div>
-                            <div>Item5</div>
+                <div class="tab-pane fade" id="insignias-pane" role="tabpanel" aria-labelledby="insignias-tab"
+                    tabindex="1">
+                    <div class="">
+                        <div id="insigniaLoader" class="insignia-card-container">
+                            <!-- Aqui injetamos as Insígnias por JavaScript -->
                         </div>
                     </div>
                 </div>
+                <div class="tab-pane fade" id="estatisticas-pane" role="tabpanel" aria-labelledby="estaticas-tab"
+                    tabindex="2">
+                    <div id="estatisticasLoader" class="estatisticas-grid">
+                        <!-- Aqui injetamos as Estatísticas por JavaScript -->
+                    </div>
+                </div>
             </div>
-    
+        </div>
+
         </div>
     </main>
-    
-    
-    teste
-   <footer class = "menu-inferior d-flex
+  
+    <footer class="menu-inferior 
             justify-content-around align-items-center
             gap-3">
-            <a class = "item-menu" href="index.html">
-                <img src="assets/botao_home.png" alt="">
-            </a>
+        <a class="item-menu" href="index.html">
+            <img src="assets/botao_home.png" alt="">
+        </a>
 
-            <a class = "item-menu" href="perfil.html">
-                <img src="assets/botao_perfil.png" alt="">
-            </a>
+        <a class="item-menu" href="perfil.html">
+            <img src="assets/botao_perfil.png" alt="">
+        </a>
 
-            <a class = "item-menu" href="missoes.html">
-                <img src="assets/botao_meta.png" alt="">
-            </a>
+        <a class="item-menu" href="missoes.html">
+            <img src="assets/botao_meta.png" alt="">
+        </a>
 
-            <a class = "item-menu" href="recompensas.html">
-                <img src="assets/botao_recompensa.png" alt="">
-            </a>
+        <a class="item-menu" href="recompensas.html">
+            <img src="assets/botao_recompensa.png" alt="">
+        </a>
 
-            <a class = "item-menu" href="sair.html">
-                <img src="assets/botao_sair.png" alt="">
-            </a>
+        <a class="item-menu" href="sair.html">
+            <img src="assets/botao_sair.png" alt="">
+        </a>
 
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/conquistas.js"></script>
+    <script src="./js/insignia.js"></script>
+    <script src="./js/estatisticas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

@@ -177,3 +177,172 @@ main {
         background-color: aquamarine;
     }
 }
+
+:root {
+
+    --cor-linha-menu: #007AFF;
+    --tamanho-texto: 1rem;
+
+    --largura-estatistica: 21rem;
+    --altura-estatistica: 6.25rem;
+
+    --cor-atividades-recentes: #F3D29E;
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.borda {
+    
+    border-radius:20px 20px 0 0;
+}
+
+.conteudo-perfil {
+    
+    min-height: .625rem;
+    background-color: #fff;
+    overflow-y: scroll;
+    border-radius: 0px 0px 20px 20px;
+    scrollbar-width: none;
+    max-height: 30rem;
+}
+
+.lista-conquistas {
+
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y: scroll;
+    padding-block: 2rem;
+}
+
+.lista-conquistas::-webkit-scrollbar,
+.lista-insignias::-webkit-scrollbar,
+.lista-estatisticas::-webkit-scrollbar {
+
+    display: none;
+}
+
+.lista-insignias {
+
+    grid-template-columns: repeat(2, 7rem);
+    grid-auto-rows: 5rem;
+    justify-content: center;
+    padding-block: 1rem;
+    row-gap: 3rem;
+    column-gap: 3rem;
+}
+
+.insignia {
+
+    width: 7em;
+    height: 5rem;
+    background-color: aquamarine;
+}
+
+.lista-estatisticas {
+
+    display: grid;
+    grid-template-columns: var(--largura-estatistica);
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.status {
+
+    width:var(--largura-estatistica);
+    min-height: var(--altura-estatistica);
+    background-color: aqua;
+    
+}
+
+.atividades-recentes {
+    width:var(--largura-estatistica);
+    min-height: var(--altura-estatistica);
+    background-color: var(--cor-atividades-recentes);
+    flex-direction: column;
+    gap: 1.625rem;
+    padding: 1rem;
+}
+
+@media (max-width: 1000px){
+
+    :root {
+
+        --largura-estatistica: 63rem;
+        --altura-estatistica: 20rem;
+    }
+
+    main {
+         margin-block: 5.5rem; 
+    }
+
+    .lista-insignias {
+
+        grid-template-columns: repeat(4, 15rem);
+        grid-auto-rows: 8rem;
+        justify-content: center;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    .insignia {
+        width: 15rem;
+        height: 8rem;
+        background-color: aquamarine;
+    }
+
+    .lista-estatisticas {
+        display: grid;
+        grid-template-columns: var(--largura-estatistica);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .status {
+
+        width:var(--largura-estatistica);
+        min-height: var(--altura-estatistica);
+        background-color: aqua;
+        
+    }
+
+    .atividades-recentes {
+        width:var(--largura-estatistica);
+        min-height: var(--altura-estatistica);
+        background-color: red;
+        gap: 2rem;
+    }
+
+    
+}
+@media (min-aspect-ratio: 4/3) and (max-height: 600px) {
+
+    main {
+
+        margin-block: 0.5rem;
+
+        margin-inline: auto;
+        
+        & .conteudo-perfil{
+
+            overflow-y: scroll;
+
+        }
+    }
+
+    .main-content {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+    }
+}

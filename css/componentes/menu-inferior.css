@@ -1,17 +1,23 @@
 :root{
 
+
     --cor-menu-inferior: linear-gradient(90deg, #FC8657 0%, #FF3353 100%);
 }
 
 .menu-inferior {
-
     position: fixed;
-    left: 0;
     bottom: 0;
-    background: var(--cor-menu-inferior);
+    left: 0;
     width: 100%;
-    height: 4rem;
-
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3px;
+    background: var(--cor-menu-inferior); 
+    height: 60px;
+    padding-bottom: env(safe-area-inset-bottom);
+    height: calc(60px + env(safe-area-inset-bottom));
 }
 
 .menu-inferior .item-menu img {
@@ -20,7 +26,7 @@
     width: 3.125rem;
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 950px) and (min-aspect-ratio: 4/3) {
     .menu-inferior {
         height: 3.5rem;
     }
@@ -29,5 +35,11 @@
         height: 2.5rem;
         width: 2.5rem;
     }
+}
 
+@media (min-width: 801px){
+
+    .menu-inferior {
+        display: none;
+    }
 }
