@@ -1,0 +1,122 @@
+
+.menu-lateral {
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+    min-height: 100vh;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-menu {
+    padding: 1.5rem 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-menu {
+    padding: 0 1.5rem 2rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+.titulo-menu {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+.titulo-menu i {
+    color: #3498db;
+    margin-right: 0.5rem;
+}
+
+.navegacao-menu {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.item-nav {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.item-nav:hover,
+.item-nav.ativo {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: white;
+    text-decoration: none;
+}
+
+.item-nav i {
+    width: 20px;
+    margin-right: 0.75rem;
+    text-align: center;
+}
+
+.rodape-menu {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.avatar-usuario {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 0.75rem;
+}
+
+.detalhes-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-usuario {
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.cargo-usuario {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+}
+
+.botao-sair {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.botao-sair:hover {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+}
