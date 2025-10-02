@@ -1,14 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - SwiftExperience</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/missoes.css">
-    <title>Página Principal</title>
+    <link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
-    
+    <header>
+     <div class="card-perfil">
+         <div class="avatar-perfil">
+             <div class="avatar-padrao"></div>
+         </div>
+
+         <h1 class="titulo-perfil">
+             Diego Campos
+         </h1>
+
+         <h5 class="subtitulo-perfil">
+             Vendedor Jr
+         </h5>
+
+         <span class="nivel-perfil">Nível 5</span>
+
+         <div class="barra-progresso">
+             <div class="progresso-atual"></div>
+         </div>
+
+         <span class="pontos-perfil"> 800 pontos</span>
+
+         <span class="experiencia-perfil">exp: 22/100</span>
+
+     </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 sidebar">
+                <div class="sidebar-content">
+                    <div class="sidebar-header">
+                        <h4 class="sidebar-title">
+                            <i class="fas fa-trophy"></i>
+                            Dashboard
+                        </h4>
+                    </div>
+                    
+                    <nav class="sidebar-nav">
+                         <a href="index.html" class="nav-item active">
+                            <i class="fas fa-home"></i>
+                            <span>Início</span>
+                        </a>
+                        <a href="missoes.html" class="nav-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Missões</span>
+                        </a>
+                        <a href="perfil.html" class="nav-item">
+                            <i class="fas fa-user"></i>
+                            <span>Perfil</span>
+                        </a>
+                        <a href="recompensas.html" class="nav-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Recompensas</span>
+                        </a>
+                    </nav>
+                    
+                    <div class="sidebar-footer">
+                        <div class="user-info">
+                            <div class="user-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="user-details">
+                                <span class="user-name">Usuário</span>
+                                <span class="user-role">Vendedor</span>
+                            </div>
+                        </div>
+                        <a href="#" class="logout-btn">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-lg-10 col-sm-12 conteudo-principal">
+                <div class="wrapper-conteudo">
+                    <div class="secao-principal">
+                        <div class="conteudo-texto">
+                            <div class="cabecalho-principal">
+                                <h1 class="titulo-principal">
+                                    Bem-vindo ao seu<br>
+                                    <span class="destaque-titulo">Dashboard do Vendedor</span>
+                                </h1>
+                                
+                                <p class="subtitulo-principal">
+                                    Transforme cada venda em uma conquista. Acompanhe seu progresso,
+                                    complete missões e desbloqueie recompensas incríveis.
+                                </p>
+                            </div>
+                            
+                            <div class="secao-conquistas">
+                                <div class="texto-conquistas">
+                                    <h2 class="titulo-secao">
+                                        <i class="fas fa-trophy"></i>
+                                        Suas Conquistas
+                                    </h2>
+                                    <p class="descricao-secao">
+                                        Cada meta atingida é uma vitória celebrada. Veja como você está
+                                        evoluindo e quais são os próximos desafios.
+                                    </p>
+                                    <div class="lista-conquistas">
+                                        <div class="item-conquista">
+                                            <i class="fas fa-fire"></i>
+                                            <span>3 Vendas em 1 dia - Concluído</span>
+                                        </div>
+                                        <div class="item-conquista">
+                                            <i class="fas fa-star"></i>
+                                            <span>Vendedor do mês - Em progresso</span>
+                                        </div>
+                                        <div class="item-conquista">
+                                            <i class="fas fa-chart-line"></i>
+                                            <span>Meta mensal - 85% concluída</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="figura-conquistas">
+                                    <div class="icone-grande conquistas">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="secao-missoes">
+                                <div class="figura-missoes">
+                                    <div class="icone-grande missoes">
+                                        <i class="fas fa-bullseye"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="texto-missoes">
+                                    <h2 class="titulo-secao">
+                                        <i class="fas fa-tasks"></i>
+                                        Missões Ativas
+                                    </h2>
+                                    <p class="descricao-secao">
+                                        Desafios personalizados que impulsionam seu crescimento profissional
+                                        e tornam cada dia mais motivador.
+                                    </p>
+                                    <div class="lista-missoes-texto">
+                                        <div class="item-missao-texto">
+                                            <i class="fas fa-rocket"></i>
+                                            <span>Super Venda - Venda acima de R$ 5.000</span>
+                                        </div>
+                                        <div class="item-missao-texto">
+                                            <i class="fas fa-medal"></i>
+                                            <span>Orgulho da loja - 10 avaliações 5 estrelas</span>
+                                        </div>
+                                        <div class="item-missao-texto">
+                                            <i class="fas fa-target"></i>
+                                            <span>Meta do dia - R$ 1.000 em vendas</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="secao-recompensas">
+                                <div class="texto-recompensas">
+                                    <h2 class="titulo-secao">
+                                        <i class="fas fa-gift"></i>
+                                        Sistema de Recompensas
+                                    </h2>
+                                    <p class="descricao-secao">
+                                        Cada esforço é reconhecido e recompensado. Acumule pontos,
+                                        suba de nível e desbloqueie benefícios exclusivos.
+                                    </p>
+                                    <div class="info-nivel">
+                                        <div class="nivel-atual">
+                                            <span class="numero-nivel">Nível 5</span>
+                                            <span class="nome-nivel">Vendedor Experiente</span>
+                                        </div>
+                                        <div class="pontos-xp">
+                                            <i class="fas fa-star"></i>
+                                            <span>800 pts • 21/100</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="figura-recompensas">
+                                    <div class="icone-grande recompensas">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="secao-motivacional">
+                                <div class="figura-motivacional">
+                                    <div class="icone-grande motivacional">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="texto-motivacional">
+                                    <h2 class="titulo-secao">
+                                        <i class="fas fa-seedling"></i>
+                                        Continue Crescendo
+                                    </h2>
+                                    <p class="descricao-secao">
+                                        Sua jornada de crescimento nunca para. Cada venda, cada cliente satisfeito,
+                                        cada meta atingida é um passo em direção ao seu sucesso profissional.
+                                    </p>
+                                    <div class="frase-motivacional">
+                                        <i class="fas fa-quote-left"></i>
+                                        <span>O sucesso é a soma de pequenos esforços repetidos dia após dia.</span>
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="secao-login">
+                                <div class="container-login">
+                                    <div class="card-login">
+                                        <div class="conteudo-login">
+                                            <h3 class="titulo-login">
+                                                <i class="fas fa-sign-in-alt"></i>
+                                                Pronto para começar sua jornada?
+                                            </h3>
+                                            <p class="texto-login">
+                                                Faça login e descubra como transformar suas vendas em uma experiência gamificada
+                                            </p>
+                                            <button class="botao-login-principal" onclick="abrirModalLogin()">
+                                                <i class="fas fa-play"></i>
+                                                Fazer Login
+                                            </button>
+                                        </div>
+                                        <div class="ilustracao-login">
+                                            <div class="icone-grande login">
+                                                <i class="fas fa-door-open"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginLabel">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Fazer Login
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formLogin">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">
+                                <i class="fas fa-lock"></i>
+                                Senha
+                            </label>
+                            <input type="password" class="form-control" id="senha" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="lembrarMe">
+                            <label class="form-check-label" for="lembrarMe">
+                                Lembrar de mim
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="fazerLogin()">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Entrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="menu-inferior 
+            justify-content-around align-items-center
+            gap-3">
+        <a class="item-menu" href="index.html">
+            <img src="assets/botao_home.png" alt="">
+        </a>
+
+        <a class="item-menu" href="perfil.html">
+            <img src="assets/botao_perfil.png" alt="">
+        </a>
+
+        <a class="item-menu" href="missoes.html">
+            <img src="assets/botao_meta.png" alt="">
+        </a>
+
+        <a class="item-menu" href="recompensas.html">
+            <img src="assets/botao_recompensa.png" alt="">
+        </a>
+
+        <a class="item-menu" href="sair.html">
+            <img src="assets/botao_sair.png" alt="">
+        </a>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home-script.js"></script>
 </body>
 </html>

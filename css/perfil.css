@@ -14,10 +14,11 @@
 
 .profile-main-content {
 
-    margin-block: calc(2dvh - 1rem);
-    width: 95%;
-    margin-inline: 2% 3%;
-    height: 40%;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    width: 90%;
+    margin-inline: auto;
+    height:50%;
 }
 .menu-stats {
 
