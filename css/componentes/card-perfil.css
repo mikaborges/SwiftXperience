@@ -26,7 +26,7 @@
     color: var(--cor-texto-perfil);
     font-weight: var(--texto-weigth);
     border-radius: 0px 0px 20px 20px;
-    display: grid;
+    display: none;
     grid-template-areas:
     ". titulo titulo"
     "avatar subtitulo subtitulo"
@@ -120,16 +120,19 @@
 
 }
 
-@media (min-width: 801px) {
+@media (max-width: 800px) {
+    .card-perfil,
+    .tela-perfil .card-perfil {
 
-    .tela-perfil .card-perfil, .card-perfil {
-        display: none;
+        display: grid;
     }
 }
 
-@media (min-aspect-ratio: 4/3) and (max-width: 950px) {
+
+@media (min-aspect-ratio: 4/3) and  (max-width: 950px) {
 
     .card-perfil, .tela-perfil .card-perfil {
+        display:grid;
         align-content: start;
         justify-content: start;
         padding: 10px;

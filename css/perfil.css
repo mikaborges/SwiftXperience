@@ -11,10 +11,19 @@
 
 }
 
-main {
 
-    margin-top: 20rem;
-    
+.profile-main-content {
+
+    margin-block: calc(2dvh - 1rem);
+    width: 95%;
+    margin-inline: 2% 3%;
+    height: 40%;
+}
+.menu-stats {
+
+    width: 100%;
+    margin-block: 24rem 0;
+
 }
 .borda {
     
@@ -27,6 +36,7 @@ main {
     max-height: 28.5625rem;
     background-color: #fff;
     overflow-y: scroll;
+    margin-inline: auto;
     border-radius: 0px 0px 20px 20px;
     scrollbar-width: none;
 }
@@ -90,7 +100,7 @@ main {
     padding: 1rem;
 }
 
-@media (min-width: 1000px){
+@media (min-width: 801px){
 
     :root {
 
@@ -98,9 +108,22 @@ main {
         --altura-estatistica: 20rem;
     }
 
-    main {
 
-        margin-top: 1rem;
+    .profile-main-content{
+        
+        width: 80% !important;
+        margin-block: 2% !important;
+        margin-inline: 18% !important;
+    }
+
+    .conteudo-perfil {
+        max-height: 38rem;
+    }
+
+    .menu-stats {
+
+        margin-block: 0rem 1rem;
+       
     }
 
     .lista-insignias {
@@ -120,12 +143,12 @@ main {
 
     .lista-estatisticas {
 
-    display: grid;
-    grid-template-columns: var(--largura-estatistica);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    padding: 1rem;
-    gap: 1.5rem;
+        display: grid;
+        grid-template-columns: var(--largura-estatistica);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        padding: 1rem;
+        gap: 1.5rem;
     }
 
     .status {
@@ -139,26 +162,51 @@ main {
     .atividades-recentes {
         width:var(--largura-estatistica);
         min-height: var(--altura-estatistica);
-        background-color: red;
         gap: 2rem;
+    }
+
+    @media (max-width: 991px) {
+        
+        .profile-main-content{
+        
+        width: 70% !important;
+        margin-block: 2% !important;
+        margin-inline: 23% 7% !important;
+    }
     }
 
     
 }
 
-@media (orientation: landscape) and (max-width: 1000px) {
+@media (min-aspect-ratio: 4/3) and (max-width: 1000px){
 
-    main {
+    :root {
 
-        margin-block: 5rem;
+    --cor-linha-menu: #007AFF;
+    --tamanho-texto: 1rem;
 
-        margin-inline: auto;
+    --largura-estatistica: 21rem;
+    --altura-estatistica: 6.25rem;
 
-        & .conteudo-perfil{
+    --cor-atividades-recentes: #F3D29E;
+
+    }
+    .profile-main-content {
+        
+        width: 100%;
+        margin-block: calc(15dvh + 2rem) !important;
+        margin-inline: 2rem;
+    }
+
+    .menu-stats {
+
+        margin: 0;
+    }
+
+    .profile-main-content .conteudo-perfil{
 
             overflow-y: scroll;
 
-        }
     }
 
      .lista-insignias {
@@ -176,103 +224,87 @@ main {
         height: 8rem;
         background-color: aquamarine;
     }
+
+    .borda {
+        
+        border-radius:20px 20px 0 0;
+    }
+
+    .conteudo-perfil {
+        
+        min-height: .625rem;
+        background-color: #fff;
+        overflow-y: scroll;
+        border-radius: 0px 0px 20px 20px;
+        scrollbar-width: none;
+        max-height: 30rem;
+        
+    }
+
+    .lista-conquistas {
+
+        flex-direction: column;
+        gap: 2rem;
+        overflow-y: scroll;
+        padding-block: 2rem;
+    }
+
+    .lista-conquistas::-webkit-scrollbar,
+    .lista-insignias::-webkit-scrollbar,
+    .lista-estatisticas::-webkit-scrollbar {
+
+        display: none;
+    }
+
+    .lista-insignias {
+
+        grid-template-columns: repeat(2, 7rem);
+        grid-auto-rows: 5rem;
+        justify-content: center;
+        padding-block: 1rem;
+        row-gap: 3rem;
+        column-gap: 3rem;
+    }
+
+    .insignia {
+
+        width: 7em;
+        height: 5rem;
+        background-color: aquamarine;
+    }
+
+    .lista-estatisticas {
+
+        display: grid;
+        grid-template-columns: var(--largura-estatistica);
+        grid-template-rows: auto 1fr;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .status {
+
+        width:var(--largura-estatistica);
+        min-height: var(--altura-estatistica);
+        background-color: aqua;
+        
+    }
+
+    .atividades-recentes {
+        width:var(--largura-estatistica);
+        min-height: var(--altura-estatistica);
+        background-color: var(--cor-atividades-recentes);
+        flex-direction: column;
+        gap: 1.625rem;
+        padding: 1rem;
+    }
+   
 }
 
-:root {
 
-    --cor-linha-menu: #007AFF;
-    --tamanho-texto: 1rem;
 
-    --largura-estatistica: 21rem;
-    --altura-estatistica: 6.25rem;
-
-    --cor-atividades-recentes: #F3D29E;
-
-}
-
-main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 2rem;
-}
-
-.borda {
-    
-    border-radius:20px 20px 0 0;
-}
-
-.conteudo-perfil {
-    
-    min-height: .625rem;
-    background-color: #fff;
-    overflow-y: scroll;
-    border-radius: 0px 0px 20px 20px;
-    scrollbar-width: none;
-    max-height: 30rem;
-}
-
-.lista-conquistas {
-
-    flex-direction: column;
-    gap: 2rem;
-    overflow-y: scroll;
-    padding-block: 2rem;
-}
-
-.lista-conquistas::-webkit-scrollbar,
-.lista-insignias::-webkit-scrollbar,
-.lista-estatisticas::-webkit-scrollbar {
-
-    display: none;
-}
-
-.lista-insignias {
-
-    grid-template-columns: repeat(2, 7rem);
-    grid-auto-rows: 5rem;
-    justify-content: center;
-    padding-block: 1rem;
-    row-gap: 3rem;
-    column-gap: 3rem;
-}
-
-.insignia {
-
-    width: 7em;
-    height: 5rem;
-    background-color: aquamarine;
-}
-
-.lista-estatisticas {
-
-    display: grid;
-    grid-template-columns: var(--largura-estatistica);
-    grid-template-rows: auto 1fr;
-    justify-content: center;
-    padding: 1rem;
-    gap: 1.5rem;
-}
-
-.status {
-
-    width:var(--largura-estatistica);
-    min-height: var(--altura-estatistica);
-    background-color: aqua;
-    
-}
-
-.atividades-recentes {
-    width:var(--largura-estatistica);
-    min-height: var(--altura-estatistica);
-    background-color: var(--cor-atividades-recentes);
-    flex-direction: column;
-    gap: 1.625rem;
-    padding: 1rem;
-}
-
-@media (max-width: 1000px){
+/* @media (max-width: 800px){
 
     :root {
 
@@ -281,7 +313,7 @@ main {
     }
 
     main {
-         margin-block: 5.5rem; 
+         margin-block: 20rem; 
     }
 
     .lista-insignias {
@@ -324,25 +356,4 @@ main {
     }
 
     
-}
-@media (min-aspect-ratio: 4/3) and (max-height: 600px) {
-
-    main {
-
-        margin-block: 0.5rem;
-
-        margin-inline: auto;
-        
-        & .conteudo-perfil{
-
-            overflow-y: scroll;
-
-        }
-    }
-
-    .main-content {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        margin-left: 0 !important;
-    }
-}
+} */

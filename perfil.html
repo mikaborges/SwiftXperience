@@ -14,7 +14,7 @@
 <body>
 
     <header class="tela-perfil">
-     <div class="card-perfil d-lg-none">
+     <div class="card-perfil">
          <div class="avatar-perfil">
              <div class="avatar-padrao"></div>
          </div>
@@ -87,59 +87,59 @@
                 </div>
             </div>
             
-        </div>
-    </div>
-    
-    <main class="col-md-9 col-lg-10 main-content">
-        <div class="container menu-stats">
-            <ul class="nav nav-underline bg-light 
-            borda
-            nav-pill
-            justify-content-around align-items-center" id="meuMenu" role="tablist">
-                <li role="presentation">
-                    <button class="nav-link active" id="conquistas-tab" data-bs-toggle="tab"
-                        data-bs-target="#conquistas-pane" type="button" role="tab" aria-controls="conquistas-tab"
-                        aria-selected="true">Conquistas</button>
-                </li>
-
-                <li role="presentation">
-                    <button class="nav-link" id="insignias-tab" data-bs-toggle="tab" data-bs-target="#insignias-pane"
-                        type="button" role="tab" aria-controls="insignias-tab" aria-selected="false">Insignias</button>
-                </li>
-
-                <li role="presentation">
-                    <button class="nav-link" id="estaticas-tab" data-bs-toggle="tab" data-bs-target="#estatisticas-pane"
-                        type="button" role="tab" aria-controls="estaticas-tab"
-                        aria-selected="false">Estatística</button>
-                </li>
-            </ul>
-
-            <div class="tab-content conteudo-perfil" id="myTabContent">
-                <div class="tab-pane fade show active" id="conquistas-pane" role="tabpanel"
-                    aria-labelledby="conquistas-tab" tabindex="0">
-                    <div id="conquistasLoader" class="conquistas-container">
-                        <!-- Aqui injetamos as Conquistas por JavaScript -->
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="insignias-pane" role="tabpanel" aria-labelledby="insignias-tab"
-                    tabindex="1">
-                    <div class="">
-                        <div id="insigniaLoader" class="insignia-card-container">
-                            <!-- Aqui injetamos as Insígnias por JavaScript -->
+            <main class="profile-main-content">
+                <div class="menu-stats">
+                    <ul class="nav nav-underline bg-light 
+                    borda
+                    nav-pill
+                    justify-content-around align-items-center" id="meuMenu" role="tablist">
+                        <li role="presentation">
+                            <button class="nav-link active" id="conquistas-tab" data-bs-toggle="tab"
+                                data-bs-target="#conquistas-pane" type="button" role="tab" aria-controls="conquistas-tab"
+                                aria-selected="true">Conquistas</button>
+                        </li>
+        
+                        <li role="presentation">
+                            <button class="nav-link" id="insignias-tab" data-bs-toggle="tab" data-bs-target="#insignias-pane"
+                                type="button" role="tab" aria-controls="insignias-tab" aria-selected="false">Insignias</button>
+                        </li>
+        
+                        <li role="presentation">
+                            <button class="nav-link" id="estaticas-tab" data-bs-toggle="tab" data-bs-target="#estatisticas-pane"
+                                type="button" role="tab" aria-controls="estaticas-tab"
+                                aria-selected="false">Estatística</button>
+                        </li>
+                    </ul>
+        
+                    <div class="tab-content conteudo-perfil" id="myTabContent">
+                        <div class="tab-pane fade show active" id="conquistas-pane" role="tabpanel"
+                            aria-labelledby="conquistas-tab" tabindex="0">
+                            <div id="conquistasLoader" class="conquistas-container">
+                                <!-- Aqui injetamos as Conquistas por JavaScript -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="insignias-pane" role="tabpanel" aria-labelledby="insignias-tab"
+                            tabindex="1">
+                            <div class="">
+                                <div id="insigniaLoader" class="insignia-card-container">
+                                    <!-- Aqui injetamos as Insígnias por JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="estatisticas-pane" role="tabpanel" aria-labelledby="estaticas-tab"
+                            tabindex="2">
+                            <div id="estatisticasLoader" class="estatisticas-grid">
+                                <!-- Aqui injetamos as Estatísticas por JavaScript -->
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="estatisticas-pane" role="tabpanel" aria-labelledby="estaticas-tab"
-                    tabindex="2">
-                    <div id="estatisticasLoader" class="estatisticas-grid">
-                        <!-- Aqui injetamos as Estatísticas por JavaScript -->
-                    </div>
+        
                 </div>
-            </div>
+            </main>
         </div>
-
-        </div>
-    </main>
+    </div>
+    
   
     <footer class="menu-inferior 
             justify-content-around align-items-center

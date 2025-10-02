@@ -11,6 +11,14 @@
 @import url("missoes.css");
 @import url("perfil.css");
 
+:root {
+
+    --bg-color: #FED4BB;
+    --content-text-color: #000000;
+    --font-primary: "Inter", sans-serif;
+    
+
+}
 * {
 
     padding: 0;
@@ -32,11 +40,3 @@ body {
 
 }
 
-:root {
-
-    --bg-color: #FED4BB;
-    --content-text-color: #000000;
-    --font-primary: "Inter", sans-serif;
-    
-
-}
