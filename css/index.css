@@ -645,6 +645,14 @@ body {
     }
 }
 
+@media (max-width: 1000px) {
+
+    .conteudo-principal {
+
+       padding-left: 1rem;
+    }
+}
+
 @media (max-width: 800px) {
 
     .conteudo-principal {
@@ -652,15 +660,17 @@ body {
         margin-block: 15rem !important;
         width: 100%;
         margin-inline: auto;
+        padding-left: 0;
     }
 }
 
-@media (min-aspect-ratio: 4/3) and (max-width: 1000px){
+@media (min-aspect-ratio: 4/3) and (max-width: 900px){
 
     .conteudo-principal {
 
         margin-block: calc(15dvh + 2rem) !important;
         width: 100%;
        margin-inline: auto;
+       padding-left: 0 ;
     }
 }
