@@ -4,8 +4,10 @@
 @import url("missoes.css");
 @import url("perfil.css");
 @import url("recompensas.css");
-@import url("componentes/card-perfil.css");
+@import url("login.css");
+@import url("cadastro.css");
 
+@import url("componentes/card-perfil.css");
 @import url("componentes/menu-lateral.css");
 @import url("componentes/menu-inferior.css");
 @import url("componentes/card-recompensas.css");

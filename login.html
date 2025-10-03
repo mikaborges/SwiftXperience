@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftExperience - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+        <div class="card-login">
+            <div class="cabecalho-login">
+                <h1 class="titulo-login">SwiftExperience</h1>
+                <p class="subtitulo-login">Faça login para continuar</p>
+            </div>
+
+            <form class="formulario-login" id="formLogin">
+                <div class="grupo-campo">
+                    <label for="usuario" class="label-campo">Usuário</label>
+                    <input type="text" id="usuario" class="campo-input" placeholder="Usuário" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="contato" class="label-campo">Telefone, CPF ou email</label>
+                    <input type="text" id="contato" class="campo-input" placeholder="Telefone, CPF ou email" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="senha" class="label-campo">Senha</label>
+                    <input type="password" id="senha" class="campo-input" placeholder="Senha" required>
+                </div>
+
+                <button type="submit" class="botao-login">
+                    LOGIN
+                </button>
+            </form>
+
+            <div class="rodape-login">
+                <p class="texto-cadastro">
+                    Não tem uma conta? 
+                    <a href="cadastro.html" class="link-cadastro">Cadastre-se</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>
